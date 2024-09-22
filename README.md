@@ -102,7 +102,7 @@ Special thanks to the open-source community for the tools and libraries that mad
 
 ### **Instructions for Use**
 
-1. **Replace the placeholders** with the correct repository URL (`https://github.com/johnwesley755/my-portfolio.git`).
+1. **Replace the placeholders** with the correct repository URL (`https://github.com/johnwesley755/portfolio.git`).
 2. Remove or modify any sections as needed to fit your specific requirements.
 
 Feel free to ask if you need any further adjustments!
