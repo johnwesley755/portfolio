@@ -1,29 +1,34 @@
 import React from "react";
-import { FaTrophy, FaAward } from "react-icons/fa";
+import kcgImg from "../src/assets/kcg.jpg"
+import internalImg from "../src/assets/internal.jpg"
 
 // Achievement data with images and descriptions
-const achievementData = [    {
-      title: "Pitchathon Finalist",
-      institution: "Vellore Institute of Technology, Chennai",
-      description:
-        "Demonstrated virtual try-on scalability to enhance customer experience in a 30-hour hackathon.",
-      date: "10/2024",
-    },
-    {
-      title: "Innothon ’24 Finalist",
-      institution: "KCG College of Technology, Chennai",
-      description:
-        "Presented an AI-powered virtual try-on solution at a 30-hour hackathon.",
-      date: "09/2024",
-    },
-    {
-      title: "Conducted Internal Hackathon",
-      institution: "Internal Organization",
-      description:
-        "Organized and led an internal hackathon to foster innovation and problem-solving within the institution.",
-      date: "Date unspecified",
-    },
-  ];
+const achievementData = [
+  {
+    title: "Pitchathon Finalist",
+    institution: "Vellore Institute of Technology, Chennai",
+    description:
+      "Demonstrated virtual try-on scalability to enhance customer experience in a 30-hour hackathon.",
+    date: "10/2024",
+    image: "https://pitchathon.co.in/challenge/assets/img/fullLogo.png",
+  },
+  {
+    title: "Innothon ’24 Finalist",
+    institution: "KCG College of Technology, Chennai",
+    description:
+      "Presented an AI-powered virtual try-on solution at a 30-hour hackathon.",
+    date: "09/2024",
+    image: kcgImg,
+  },
+  {
+    title: "Conducted Internal Hackathon",
+    institution: "Internal Organization",
+    description:
+      "Organized and led an internal hackathon to foster innovation and problem-solving within the institution.",
+    date: "Date unspecified",
+    image:internalImg,
+  },
+];
 const Achievements = () => {
   return (
     <section className="relative py-12 bg-gradient-to-r from-gray-900 via-violet-800 to-indigo-900 text-white overflow-hidden">
@@ -63,22 +68,7 @@ const Achievements = () => {
             </p>
             <p className="text-gray-900 mb-4">{achievement.description}</p>
             {/* Icons */}
-            <div className="flex gap-4 mt-6">
-              <a
-                href="#"
-                className="inline-flex items-center text-yellow-500 hover:text-yellow-700 transition-colors"
-              >
-                <FaAward className="mr-2" />
-                View More
-              </a>
-              <a
-                href="#"
-                className="inline-flex items-center text-indigo-500 hover:text-indigo-700 transition-colors"
-              >
-                <FaTrophy className="mr-2" />
-                Trophy
-              </a>
-            </div>
+
           </div>
         ))}
       </div>
