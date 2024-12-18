@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full fixed top-0 left-0 bg-black bg-opacity-90 shadow-md z-50">
+    <header className="w-full fixed top-0 left-0 bg-black bg-opacity-90 z-50">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link to="hero" smooth={true} duration={500}>
@@ -92,7 +92,7 @@ const Navbar = () => {
 
         {/* Sidebar Content */}
         <ul className="flex flex-col items-center gap-8 pt-20 text-gray-300 text-lg">
-          <li className="hover:text-violet-400">
+          <li className="hover:text-violet-400 cursor-pointer">
             <Link
               to="about"
               smooth={true}
@@ -102,7 +102,7 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          <li className="hover:text-violet-400">
+          <li className="hover:text-violet-400 cursor-pointer">
             <Link
               to="skills"
               smooth={true}
@@ -112,7 +112,7 @@ const Navbar = () => {
               Skills
             </Link>
           </li>
-          <li className="hover:text-violet-400">
+          <li className="hover:text-violet-400 cursor-pointer">
             <Link
               to="projects"
               smooth={true}
@@ -122,7 +122,7 @@ const Navbar = () => {
               Projects
             </Link>
           </li>
-          <li className="hover:text-violet-400">
+          <li className="hover:text-violet-400 cursor-pointer">
             <Link
               to="achievements"
               smooth={true}
@@ -132,7 +132,7 @@ const Navbar = () => {
               Achievements
             </Link>
           </li>
-          <li className="hover:text-violet-400">
+          <li className="hover:text-violet-400 cursor-pointer">
             <Link
               to="contact"
               smooth={true}

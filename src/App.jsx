@@ -6,6 +6,7 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Footer from "./Footer";
 import Achievements from "./Achievements";
+import Contact from "./Contact";
 
 const App = () => {
   return (
@@ -36,8 +37,13 @@ const App = () => {
         <Achievements />
       </section>
 
-      {/* Footer / Contact Section */}
+      {/* Contacts Section */}
       <section id="contact">
+        <Contact />
+      </section>
+
+      {/* Footer / Contact Section */}
+      <section>
         <Footer />
       </section>
     </div>

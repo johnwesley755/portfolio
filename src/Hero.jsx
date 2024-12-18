@@ -4,11 +4,11 @@ import resumeFile from "../src/assets/JohnWesley_resume.pdf"; // Replace with yo
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br max-md:pb-20 from-black via-indigo-900 to-purple-900 text-white flex items-center overflow-hidden">
+    <section className="relative min-h-screen bg-black text-white flex items-center overflow-hidden max-md:pb-20">
       {/* Background Shapes */}
       <div className="absolute -top-20 -left-20 w-64 h-64 bg-violet-500 rounded-full opacity-20 animate-pulse"></div>
-      <div className="absolute bottom-10 left-40 w-72 h-72 bg-indigo-700 rounded-full opacity-30 animate-bounce"></div>
-      <div className="absolute -bottom-16 -right-16 w-80 h-80 bg-purple-500 rounded-full opacity-10 animate-spin-slow"></div>
+      <div className="absolute bottom-10 left-40 w-72 h-72 bg-gradient-to-br from-pink-400 to-indigo-800 rounded-full opacity-30 animate-bounce"></div>
+      <div className="absolute -bottom-16 -right-16 w-80 h-80 bg-purple-100 rounded-full opacity-10 animate-spin-slow"></div>
 
       {/* Container */}
       <div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center justify-between gap-10 relative z-10">
@@ -26,13 +26,14 @@ const Hero = () => {
           </h2>
 
           {/* Buttons */}
-          <div className="flex justify-center md:justify-start gap-6">
+          <div className="flex justify-center md:justify-start gap-6 max-md:flex-wrap">
             <a
-              href="#portfolio"
-              className="inline-block bg-violet-500 hover:bg-violet-600 text-white text-xl font-medium px-6 py-3 rounded-full transition-all duration-300 shadow-lg"
+              href="#projects"
+              className="inline-block bg-gradient-to-r from-violet-500 to-indigo-500 hover:from-violet-600 hover:to-indigo-600 text-white text-xl font-medium px-6 py-3 rounded-full transition-all duration-300 shadow-lg"
             >
-              See Portfolio
+              View Projects
             </a>
+
             <a
               href={resumeFile}
               download="JohnWesley_Resume.pdf"

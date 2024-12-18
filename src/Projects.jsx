@@ -9,34 +9,14 @@ import vutoriaImg from "../src/assets/vutoria(1).png";
 // Project data with images and deployed links
 const projectData = [
   {
-    title: "Namma Isai – A Music Player Web Application",
-    technologies: "HTML, CSS, JavaScript",
-    description:
-      "Designed and developed a fully functional music player with an intuitive interface, featuring play/pause functionality, volume control, progress tracking, and playlist management using local storage. Ensured a responsive design to provide seamless usability across devices.",
-    date: "Jul 2024",
-    image: musicImg, // Replace with your actual image path
-    githubLink: "https://github.com/johnwesley755/namma-isai-music", // Replace with actual GitHub link
-    deployedLink: "https://nammaisai.com", // Replace with actual deployed link
-  },
-  {
-    title: "Gram Panchayat Website",
-    technologies: "HTML, CSS, JavaScript, Firebase",
-    description:
-      "Developed a community-focused website for managing ward details, applications for electricity and water connections, ward expenses, notifications, and user complaints. Incorporated Firebase for authentication and real-time data handling.",
-    date: "Aug 2024",
-    image: gramImg, // Replace with your actual image path
-    githubLink: "https://github.com/johnwesley755/gram-panchayat", // Replace with actual GitHub link
-    deployedLink: "https://grampanchayat.com", // Replace with actual deployed link
-  },
-  {
     title: "Soulsborne Guide – Community Wiki for Soulslike Game",
     technologies: "React, Vite, Tailwind CSS, Firebase",
     description:
       "Soulsborne is a platform I developed to help individuals conquer procrastination, sharpen their skills, and excel in personal and professional growth by embracing challenges and pushing through barriers, inspired by the spirit of Soulsborne games.",
     date: "Nov 2024",
-    image: soulsborneImg, // Replace with your actual image path
-    githubLink: "https://github.com/johnwesley755/Soulsborne", // Replace with actual GitHub link
-    deployedLink: "https://soulsborne-261a4.web.app/", // Replace with actual deployed link
+    image: soulsborneImg,
+    githubLink: "https://github.com/johnwesley755/Soulsborne",
+    deployedLink: "https://soulsborne-261a4.web.app/",
   },
   {
     title: "Vutoria – AI-Driven Virtual Try-On Platform",
@@ -44,9 +24,9 @@ const projectData = [
     description:
       "Created an e-commerce platform with a unique virtual try-on feature powered by AI diffusion models. Integrated with responsive UI to offer users an immersive shopping experience.",
     date: "Oct 2024",
-    image: vutoriaImg, // Replace with your actual image path
-    githubLink: "https://github.com/johnwesley755/vutoria-demo-store", // Replace with actual GitHub link
-    deployedLink: "https://vutoria-bb1e7.web.app/", // Replace with actual deployed link
+    image: vutoriaImg,
+    githubLink: "https://github.com/johnwesley755/vutoria-demo-store",
+    deployedLink: "https://vutoria-bb1e7.web.app/",
   },
   {
     title: "SideGig App – Freelance and Gig Worker Platform",
@@ -54,20 +34,35 @@ const projectData = [
     description:
       "Designed and developed a platform for freelancers and gig workers to find and apply for jobs. Features included skill matching, secure messaging, customer feedback, and privacy options.",
     date: "Sep 2024",
-    image: sideImg, // Replace with your actual image path
-    githubLink: "https://github.com/johnwesley755/sidegig", // Replace with actual GitHub link
-    deployedLink: "https://sidegigapp.com", // Replace with actual deployed link
+    image: sideImg,
+    githubLink: "https://github.com/johnwesley755/sidegig",
+    deployedLink: "https://sidegigapp.com",
+  },
+  {
+    title: "Gram Panchayat Website",
+    technologies: "HTML, CSS, JavaScript, Firebase",
+    description:
+      "Developed a community-focused website for managing ward details, applications for electricity and water connections, ward expenses, notifications, and user complaints. Incorporated Firebase for authentication and real-time data handling.",
+    date: "Aug 2024",
+    image: gramImg,
+    githubLink: "https://github.com/johnwesley755/gram-panchayat",
+  },
+  {
+    title: "Namma Isai – A Music Player Web Application",
+    technologies: "HTML, CSS, JavaScript",
+    description:
+      "Designed and developed a fully functional music player with an intuitive interface, featuring play/pause functionality, volume control, progress tracking, and playlist management using local storage. Ensured a responsive design to provide seamless usability across devices.",
+    date: "Jul 2024",
+    image: musicImg,
+    githubLink: "https://github.com/johnwesley755/namma-isai-music",
   },
 ];
-
 const Projects = () => {
   return (
     <section className="relative text-black py-12 overflow-hidden bg-gray-50">
       {/* Background Shapes */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-r from-violet-400 to-indigo-400 rounded-full opacity-30 animate-pulse z-0"></div>
       <div className="absolute bottom-0 left-36 w-96 h-96 bg-gradient-to-l from-indigo-500 to-violet-400 rounded-full opacity-20 animate-bounce z-0"></div>
-
-      {/* Animated Circle in the right corner */}
       <div className="absolute top-16 right-0 w-96 h-96 bg-gradient-to-r from-indigo-300 to-violet-500 rounded-full opacity-10 animate-bounceBehind z-0"></div>
 
       {/* Section Header */}
