@@ -1,5 +1,6 @@
 import React from "react";
 import profileImg from "../src/assets/profile.png"; // Replace with your image path
+import resumeFile from "../src/assets/JohnWesley_resume.pdf"; // Replace with your resume file path
 
 const Hero = () => {
   return (
@@ -33,10 +34,11 @@ const Hero = () => {
               See Portfolio
             </a>
             <a
-              href="#contact"
+              href={resumeFile}
+              download="JohnWesley_Resume.pdf"
               className="inline-block border-2 border-gray-300 text-gray-300 hover:text-white hover:border-violet-500 hover:bg-violet-500 text-xl font-medium px-6 py-3 rounded-full transition-all duration-300 shadow-lg"
             >
-              Contact Me
+              Download Resume
             </a>
           </div>
         </div>
@@ -52,8 +54,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-
     </section>
   );
 };

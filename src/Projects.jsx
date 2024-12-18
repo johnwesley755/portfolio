@@ -15,7 +15,7 @@ const projectData = [
       "Designed and developed a fully functional music player with an intuitive interface, featuring play/pause functionality, volume control, progress tracking, and playlist management using local storage. Ensured a responsive design to provide seamless usability across devices.",
     date: "Jul 2024",
     image: musicImg, // Replace with your actual image path
-    githubLink: "#", // Replace with actual GitHub link
+    githubLink: "https://github.com/johnwesley755/namma-isai-music", // Replace with actual GitHub link
     deployedLink: "https://nammaisai.com", // Replace with actual deployed link
   },
   {
@@ -25,7 +25,7 @@ const projectData = [
       "Developed a community-focused website for managing ward details, applications for electricity and water connections, ward expenses, notifications, and user complaints. Incorporated Firebase for authentication and real-time data handling.",
     date: "Aug 2024",
     image: gramImg, // Replace with your actual image path
-    githubLink: "#", // Replace with actual GitHub link
+    githubLink: "https://github.com/johnwesley755/gram-panchayat", // Replace with actual GitHub link
     deployedLink: "https://grampanchayat.com", // Replace with actual deployed link
   },
   {
@@ -35,7 +35,7 @@ const projectData = [
       "Soulsborne is a platform I developed to help individuals conquer procrastination, sharpen their skills, and excel in personal and professional growth by embracing challenges and pushing through barriers, inspired by the spirit of Soulsborne games.",
     date: "Nov 2024",
     image: soulsborneImg, // Replace with your actual image path
-    githubLink: "#", // Replace with actual GitHub link
+    githubLink: "https://github.com/johnwesley755/Soulsborne", // Replace with actual GitHub link
     deployedLink: "https://soulsborne-261a4.web.app/", // Replace with actual deployed link
   },
   {
@@ -45,7 +45,7 @@ const projectData = [
       "Created an e-commerce platform with a unique virtual try-on feature powered by AI diffusion models. Integrated with responsive UI to offer users an immersive shopping experience.",
     date: "Oct 2024",
     image: vutoriaImg, // Replace with your actual image path
-    githubLink: "#", // Replace with actual GitHub link
+    githubLink: "https://github.com/johnwesley755/vutoria-demo-store", // Replace with actual GitHub link
     deployedLink: "https://vutoria-bb1e7.web.app/", // Replace with actual deployed link
   },
   {
@@ -55,7 +55,7 @@ const projectData = [
       "Designed and developed a platform for freelancers and gig workers to find and apply for jobs. Features included skill matching, secure messaging, customer feedback, and privacy options.",
     date: "Sep 2024",
     image: sideImg, // Replace with your actual image path
-    githubLink: "#", // Replace with actual GitHub link
+    githubLink: "https://github.com/johnwesley755/sidegig", // Replace with actual GitHub link
     deployedLink: "https://sidegigapp.com", // Replace with actual deployed link
   },
 ];
