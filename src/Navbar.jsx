@@ -15,7 +15,9 @@ const Navbar = () => {
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link to="hero" smooth={true} duration={500}>
-          <div className="text-3xl font-bold text-violet-500 cursor-pointer">John Wesley</div>
+          <div className="text-3xl font-bold text-violet-500 cursor-pointer">
+            John Wesley
+          </div>
         </Link>
 
         {/* Desktop Menu */}
@@ -57,7 +59,7 @@ const Navbar = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/john-wesley-6707ab258/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-violet-400 text-2xl transition-all"
@@ -153,7 +155,7 @@ const Navbar = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/john-wesley-6707ab258/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-violet-400 text-2xl transition-all"

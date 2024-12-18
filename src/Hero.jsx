@@ -4,7 +4,7 @@ import resumeFile from "../src/assets/JohnWesley_resume.pdf"; // Replace with yo
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-black via-indigo-900 to-purple-900 text-white flex items-center overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-br max-md:pb-20 from-black via-indigo-900 to-purple-900 text-white flex items-center overflow-hidden">
       {/* Background Shapes */}
       <div className="absolute -top-20 -left-20 w-64 h-64 bg-violet-500 rounded-full opacity-20 animate-pulse"></div>
       <div className="absolute bottom-10 left-40 w-72 h-72 bg-indigo-700 rounded-full opacity-30 animate-bounce"></div>
@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center justify-between gap-10 relative z-10">
         {/* Left Content */}
         <div className="flex-1 text-center md:text-left">
-          <h2 className="text-gray-300 text-lg md:text-xl tracking-widest mb-3 uppercase">
+          <h2 className="text-gray-300 text-lg md:text-xl tracking-widest mb-3 uppercase max-md:mt-28">
             Hello there, welcome to my site
           </h2>
           <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-4">
