@@ -1,11 +1,17 @@
 import React from "react";
-import { Link } from "react-scroll";
-import profileImg from "../src/assets/profile.png"; // Replace with your image path
-import resumePdf from "../src/assets/JohnWesley_Resume.pdf"; // Replace with your resume PDF path
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-black text-white flex items-center overflow-hidden">
+    <section
+      className="relative min-h-screen bg-cover bg-center text-white flex items-center overflow-hidden"
+      style={{
+        backgroundImage:
+          "url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwMTYtYy0wOF8xLWtzaDZtemEzLmpwZw.jpg')", // Replace with your desired background image
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+
       {/* Background Shapes */}
       <div className="absolute -top-20 -left-20 w-64 h-64 bg-violet-500 rounded-full opacity-20 animate-pulse"></div>
       <div className="absolute bottom-10 left-40 w-72 h-72 bg-indigo-700 rounded-full opacity-30 animate-bounce"></div>
@@ -29,20 +35,17 @@ const Hero = () => {
           {/* Buttons */}
           <div className="flex justify-center md:justify-start gap-6">
             <a
-              href={resumePdf}
-              download
+              href="#portfolio"
               className="inline-block bg-violet-500 hover:bg-violet-600 text-white text-xl font-medium px-6 py-3 rounded-full transition-all duration-300 shadow-lg"
             >
-              Download Resume
+              See Portfolio
             </a>
-            <Link
-              to="projects"
-              smooth={true}
-              duration={500}
-              className="inline-block bg-indigo-500 hover:bg-indigo-600 text-white text-xl font-medium px-6 py-3 rounded-full cursor-pointer transition-all duration-300 shadow-lg"
+            <a
+              href="#contact"
+              className="inline-block border-2 border-gray-300 text-gray-300 hover:text-white hover:border-violet-500 hover:bg-violet-500 text-xl font-medium px-6 py-3 rounded-full transition-all duration-300 shadow-lg"
             >
-              View Projects
-            </Link>
+              Contact Me
+            </a>
           </div>
         </div>
 
@@ -50,7 +53,7 @@ const Hero = () => {
         <div className="relative flex-shrink-0">
           <div className="relative w-80 h-80 md:w-[28rem] md:h-[28rem] rounded-3xl overflow-hidden border-4 border-violet-500 shadow-2xl transform hover:scale-105 transition-transform duration-500">
             <img
-              src={profileImg}
+              src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg"
               alt="John Wesley"
               className="w-full h-full object-cover"
             />
@@ -58,13 +61,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Floating "Hire Me" Button */}
-      <a
-        href="#hire"
-        className="absolute top-6 right-6 bg-transparent border-2 border-violet-500 text-violet-400 px-6 py-2 rounded-full text-base font-medium hover:bg-violet-500 hover:text-white transition-all duration-300 z-10"
-      >
-        Hire Me
-      </a>
+
     </section>
   );
 };

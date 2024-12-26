@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const About = () => {
-  // Animation Variants
   const fadeIn = (direction = "up", delay = 0) => ({
     hidden: {
       opacity: 0,
@@ -34,11 +33,11 @@ const About = () => {
     >
       {/* Background Gradient Shapes */}
       <motion.div
-        className="absolute top-0 -left-16 w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 blur-3xl animate-pulse"
+        className="absolute top-0 -left-16 w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 blur-[120px] animate-pulse"
         variants={fadeIn("down")}
       ></motion.div>
       <motion.div
-        className="absolute bottom-0 -right-16 w-72 h-72 bg-gradient-to-bl from-purple-400 to-indigo-500 rounded-full opacity-30 blur-2xl animate-bounce"
+        className="absolute bottom-0 -right-16 w-72 h-72 bg-gradient-to-bl from-purple-400 to-indigo-500 rounded-full opacity-30 blur-[150px] animate-bounce"
         variants={fadeIn("up")}
       ></motion.div>
 
@@ -64,11 +63,11 @@ const About = () => {
           </div>
           {/* Decorative Floating Shape */}
           <motion.div
-            className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-full opacity-40 blur-lg animate-pulse"
+            className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-full opacity-40 blur-[50px] animate-pulse"
             variants={fadeIn("up", 0.4)}
           ></motion.div>
           <motion.div
-            className="absolute top-4 right-4 w-12 h-12 bg-gradient-to-tl from-purple-400 to-pink-400 rounded-full opacity-40 blur-lg animate-pulse"
+            className="absolute top-4 right-4 w-12 h-12 bg-gradient-to-tl from-purple-400 to-pink-400 rounded-full opacity-40 blur-[40px] animate-pulse"
             variants={fadeIn("down", 0.6)}
           ></motion.div>
         </motion.div>
@@ -112,7 +111,7 @@ const About = () => {
 
       {/* Additional Shape */}
       <motion.div
-        className="absolute bottom-20 left-10 w-28 h-28 bg-gradient-to-bl from-blue-400 to-purple-400 rounded-full opacity-20 blur-2xl"
+        className="absolute bottom-20 left-10 w-28 h-28 bg-gradient-to-bl from-blue-400 to-purple-400 rounded-full opacity-20 blur-[100px]"
         variants={fadeIn("up", 0.8)}
       ></motion.div>
     </motion.section>
