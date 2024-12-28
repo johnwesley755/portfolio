@@ -17,20 +17,19 @@ const About = () => {
   });
 
   return (
-    <motion.section
+    <section
       id="about"
-      className="relative bg-white text-black py-16 md:py-24 overflow-hidden"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-      variants={{
-        hidden: { opacity: 0 },
-        visible: {
-          opacity: 1,
-          transition: { staggerChildren: 0.2 },
-        },
+      className="relative bg-center text-white py-16 md:py-24 overflow-hidden"
+      style={{
+        backgroundImage:
+          "url('https://img.freepik.com/free-vector/decorative-wavy-background_1035-8670.jpg?t=st=1735409538~exp=1735413138~hmac=7dfb878af17dc2ad951b670fe13d3921dce72cd7b2dfc337266d3bb89cf3c921&w=740')",
       }}
+
+      
     >
+      {/* Overlay for readability */}
+      <div className="absolute inset-0 text-black bg-opacity-50"></div>
+
       {/* Background Gradient Shapes */}
       <motion.div
         className="absolute top-0 -left-16 w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 blur-[120px] animate-pulse"
@@ -61,60 +60,48 @@ const About = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          {/* Decorative Floating Shape */}
-          <motion.div
-            className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-full opacity-40 blur-[50px] animate-pulse"
-            variants={fadeIn("up", 0.4)}
-          ></motion.div>
-          <motion.div
-            className="absolute top-4 right-4 w-12 h-12 bg-gradient-to-tl from-purple-400 to-pink-400 rounded-full opacity-40 blur-[40px] animate-pulse"
-            variants={fadeIn("down", 0.6)}
-          ></motion.div>
         </motion.div>
 
         {/* Right Content */}
-        <motion.div className="flex-1" variants={fadeIn("right", 0.2)}>
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-gray-800 leading-tight">
-            Who Am <span className="text-blue-500">I?</span>
+        <motion.div
+          className="flex-1 text-center md:text-left"
+          variants={fadeIn("right", 0.2)}
+        >
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-black leading-tight">
+            Who Am <span className="text-violet-600">I?</span>
           </h2>
-          <p className="text-lg leading-relaxed text-gray-600 mb-5">
+          <p className="text-lg leading-relaxed text-gray-800 mb-5">
             I am <strong className="text-black">John Wesley</strong>, a
             passionate{" "}
-            <span className="font-semibold text-blue-500">
+            <span className="font-bold text-violet-600">
               Full Stack Developer
             </span>{" "}
             with experience in creating modern, scalable, and high-performance
             web applications. I specialize in both front-end and back-end
             development, combining{" "}
-            <span className="font-semibold text-blue-500">creativity</span> and{" "}
-            <span className="font-semibold text-blue-500">technology</span> to
+            <span className="font-bold text-violet-600">creativity</span> and{" "}
+            <span className="font-bold text-violet-600">technology</span> to
             build clean, intuitive user interfaces and efficient back-end
             systems.
           </p>
-          <p className="text-lg leading-relaxed text-gray-600 mb-5">
+          <p className="text-lg leading-relaxed text-gray-800 mb-5">
             My journey in development started with a strong curiosity for
             solving real-world problems through <strong>code.</strong> Over
             time, I honed my skills in modern tools and frameworks such as{" "}
-            <span className="font-medium text-blue-600">
+            <span className="font-bold text-violet-600">
               React, Node.js, Tailwind CSS
             </span>
             , and more. I focus on delivering seamless and interactive digital
             experiences tailored to user needs.
           </p>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-800">
             Beyond development, I continuously explore emerging technologies
-            like <span className="font-medium text-blue-600">AI and ML</span> to
+            like <span className="font-bold text-violet-600">AI and ML</span> to
             push the boundaries of what’s possible in the tech space.
           </p>
         </motion.div>
       </motion.div>
-
-      {/* Additional Shape */}
-      <motion.div
-        className="absolute bottom-20 left-10 w-28 h-28 bg-gradient-to-bl from-blue-400 to-purple-400 rounded-full opacity-20 blur-[100px]"
-        variants={fadeIn("up", 0.8)}
-      ></motion.div>
-    </motion.section>
+    </section>
   );
 };
 

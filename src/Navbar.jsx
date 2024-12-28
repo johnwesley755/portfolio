@@ -11,11 +11,11 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full fixed top-0 left-0 bg-black bg-opacity-90 z-50">
+    <header className="w-full top-0 left-0 absolute bg-opacity-90 z-50">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link to="hero" smooth={true} duration={500}>
-          <div className="text-3xl font-bold text-violet-500 cursor-pointer">
+          <div className="text-4xl font-extrabold text-violet-500 cursor-pointer">
             John Wesley
           </div>
         </Link>
