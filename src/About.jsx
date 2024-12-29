@@ -20,10 +20,7 @@ const About = () => {
     <section
       id="about"
       className="relative bg-center text-white py-16 md:py-24 overflow-hidden"
-      style={{
-        backgroundImage:
-          "url('https://img.freepik.com/free-vector/decorative-wavy-background_1035-8670.jpg?t=st=1735409538~exp=1735413138~hmac=7dfb878af17dc2ad951b670fe13d3921dce72cd7b2dfc337266d3bb89cf3c921&w=740')",
-      }}
+     
 
       
     >
@@ -32,11 +29,11 @@ const About = () => {
 
       {/* Background Gradient Shapes */}
       <motion.div
-        className="absolute top-0 -left-16 w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 blur-[120px] animate-pulse"
+        className="absolute top-0 -left-16 w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 blur-[50px] animate-pulse"
         variants={fadeIn("down")}
       ></motion.div>
       <motion.div
-        className="absolute bottom-0 -right-16 w-72 h-72 bg-gradient-to-bl from-purple-400 to-indigo-500 rounded-full opacity-30 blur-[150px] animate-bounce"
+        className="absolute bottom-0 -right-16 w-72 h-72 bg-gradient-to-bl from-purple-400 to-indigo-500 rounded-full opacity-30 blur-[50px] animate-bounce"
         variants={fadeIn("up")}
       ></motion.div>
 
