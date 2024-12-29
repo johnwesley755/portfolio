@@ -4,6 +4,7 @@ import { Button } from "./components/ui/button";
 import Typewriter from "typewriter-effect";
 import { Link as ScrollLink } from "react-scroll";
 import resumePdf from "../src/assets/resume.pdf";
+import profileImg from '../src/assets/profile.png'
 const Hero = () => {
   return (
     <section
@@ -108,7 +109,7 @@ const Hero = () => {
         >
           <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] mb-20 rounded-3xl overflow-hidden border-4 border-violet-500 shadow-2xl transform hover:scale-105 transition-transform duration-500">
             <img
-              src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg"
+              src={profileImg}
               alt="John Wesley"
               className="w-full h-full object-cover"
             />
